@@ -9,7 +9,7 @@ const fetchSeries = async (setSeries) => {
       response.data._embedded['viaplay:blocks'][0]._embedded['viaplay:products']
     )
   } catch (error) {
-    console.log(error)
+    setSeries([])
   }
 }
 
