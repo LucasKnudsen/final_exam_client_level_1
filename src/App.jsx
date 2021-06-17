@@ -1,12 +1,9 @@
 import React from 'react'
+import LandingView from './components/LandingView'
+import './styles/style.css'
 
 const App = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <LandingView />
 }
 
 export default App
-

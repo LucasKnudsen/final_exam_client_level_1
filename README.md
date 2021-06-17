@@ -1,5 +1,11 @@
 # Viaplay Challenge 
 
+## Action plan: 
+- Run API on postman
+- Fixture
+- Write tests
+    - Display 10 videos
+
 You are challenged with the task of replicating a UI and test the UI with Cypress IO. It is a desktop-only web application listing TV series from Viaplay. 
 You need to fork this repository and clone it down to your local computer. Implement the challenge in your forked repository, make sure to branch off and to open up a WIP pull request to this repository as soon as possible.
 
