@@ -31,7 +31,7 @@ describe('Displays list of series', () => {
     })
   })
 
-  describe.only('Unsuccessfully with no connection to Viaplay', () => {
+  describe('Unsuccessfully with no connection to Viaplay', () => {
     beforeEach(() => {
       cy.intercept('GET', 'https://content.viaplay.se/pc-se/serier/samtliga', {
         statusCode: 500,

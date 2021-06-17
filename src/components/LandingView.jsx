@@ -3,9 +3,10 @@ import { fetchSeries } from '../modules/viaplayServices'
 
 const LandingView = () => {
   const [series, setSeries] = useState([])
+  const [error, setError] = useState(false)
 
   useEffect(() => {
-    fetchSeries(setSeries)
+    fetchSeries(setSeries, setError)
   }, [])
 
   const listOfSeries = series.map((serie, index) => {
@@ -28,9 +29,7 @@ const LandingView = () => {
       </div>
 
       <div className='series-container'>
-        {series[0] ? (
-          listOfSeries
-        ) : (
+        {error ? (
           <>
             <h4 data-cy='error-message'>
               Unfortunately we could not connect to Viaplay. Please use this
@@ -41,6 +40,8 @@ const LandingView = () => {
               alt='go-play'
             />
           </>
+        ) : (
+          listOfSeries
         )}
       </div>
       <div className='block' />
