@@ -19,7 +19,12 @@ const LandingView = () => {
   return (
     <div className='container'>
       <div className='block'>
-        <img data-cy='logo' />
+        <img
+          data-cy='logo'
+          className='logo'
+          alt='viaplay-logo'
+          src='https://kundservice.viaplay.se/wp-content/themes/viaplaycs/assets/dist/images/viaplay_white.svg'
+        />
       </div>
       <div className='series-container'>{listOfSeries}</div>
       <div className='block' />
